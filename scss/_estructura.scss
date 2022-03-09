@@ -1,0 +1,30 @@
+*{ 
+    margin: 0%;
+    padding: 0%;
+}
+.header{ 
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+.logo-header img { 
+    width: 300px;
+} 
+.nav-menu ul{ 
+    display: flex;
+    align-items: center; 
+    li{ 
+        margin-right: 50px;
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+.nav-menu li:last-child{ 
+    padding: 10px 10px 10px 10px;
+}
+
