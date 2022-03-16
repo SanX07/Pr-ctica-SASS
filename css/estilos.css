@@ -24,6 +24,32 @@
 .nav-menu li:last-child {
   padding: 10px 10px 10px 10px; }
 
+.container-intro {
+  height: 850px;
+  width: 700px;
+  background-color: whitesmoke; }
+
+.container-ft {
+  text-align: center;
+  padding-top: 50px; }
+
+.boton, .boton--mg, .boton--c, .boton--nmg {
+  width: 200px;
+  background-color: white;
+  color: black; }
+
+.boton--mg {
+  background-color: green;
+  color: whitesmoke; }
+
+.boton--c {
+  background-color: yellow;
+  color: black; }
+
+.boton--nmg {
+  background-color: red;
+  color: black; }
+
 body {
   font-family: 'Teko', sans-serif;
   font-size: 40px; }

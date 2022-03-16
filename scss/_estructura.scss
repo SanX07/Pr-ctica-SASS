@@ -2,12 +2,16 @@
     margin: 0%;
     padding: 0%;
 }
+$header:(   
+    espaciado: space-between,
+    centro: center,
+    pd: 30px 40px);
 .header{ 
     background-color: black;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 40px;
+    justify-content:map-get($header, espaciado);
+    align-items: map-get($header, centro );
+    padding: map-get($header, pd );
 }
 
 .logo-header img { 
@@ -27,4 +31,35 @@
 .nav-menu li:last-child{ 
     padding: 10px 10px 10px 10px;
 }
-
+@mixin sizes ($width, $height, $color){ 
+    height: $height;
+    width: $width;
+    background-color: $color;
+}
+.container-intro{ 
+    @include sizes(700px, 850px, whitesmoke)
+}
+.container-ft{ 
+    text-align: center;
+    padding-top: 50px;
+}
+.boton{ 
+    width: 200px;
+    background-color: white;
+    color: black;
+}
+.boton--mg{ 
+    @extend .boton; 
+    background-color: green;
+    color: whitesmoke;
+}
+.boton--c{ 
+    @extend .boton; 
+    background-color: yellow;
+    color: black;
+}
+.boton--nmg{ 
+    @extend .boton; 
+    background-color: red;
+    color: black;
+}
